@@ -1,0 +1,88 @@
+-- phpMyAdmin SQL Dump
+-- version 4.7.0
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: Jan 30, 2018 at 11:54 AM
+-- Server version: 10.1.25-MariaDB
+-- PHP Version: 5.6.31
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `user_location`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `locations`
+--
+
+CREATE TABLE `locations` (
+  `id` int(11) NOT NULL,
+  `latitude` decimal(10,8) DEFAULT NULL,
+  `longitude` decimal(10,8) DEFAULT NULL,
+  `date` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `locations`
+--
+
+INSERT INTO `locations` (`id`, `latitude`, `longitude`, `date`) VALUES
+(1, '18.93589440', '72.83372950', '2018-01-30 16:10:52'),
+(2, '18.93589840', '72.83372760', '2018-01-30 16:12:52'),
+(3, '18.93589790', '72.83372550', '2018-01-30 16:13:03'),
+(4, '18.93589650', '72.83372600', '2018-01-30 16:13:14'),
+(5, '18.93589480', '72.83372770', '2018-01-30 16:13:24'),
+(6, '18.93589480', '72.83372770', '2018-01-30 16:13:34'),
+(7, '18.93589460', '72.83372760', '2018-01-30 16:13:44'),
+(8, '18.93589030', '72.83372740', '2018-01-30 16:13:54'),
+(9, '18.93589050', '72.83372720', '2018-01-30 16:14:04'),
+(10, '18.93589050', '72.83372720', '2018-01-30 16:14:14'),
+(11, '18.93589050', '72.83372720', '2018-01-30 16:14:22'),
+(12, '18.93588960', '72.83374320', '2018-01-30 16:16:59'),
+(13, '18.93589210', '72.83373490', '2018-01-30 16:17:43'),
+(14, '18.93589140', '72.83373190', '2018-01-30 16:18:29'),
+(15, '18.93589130', '72.83373430', '2018-01-30 16:19:13'),
+(16, '18.93589230', '72.83373720', '2018-01-30 16:19:59'),
+(17, '18.93589350', '72.83373310', '2018-01-30 16:20:43'),
+(18, '18.93589090', '72.83373590', '2018-01-30 16:21:29'),
+(19, '18.93589040', '72.83372700', '2018-01-30 16:22:13'),
+(20, '18.93589150', '72.83372640', '2018-01-30 16:22:59'),
+(21, '18.93589550', '72.83373310', '2018-01-30 16:23:43'),
+(22, '18.93589510', '72.83373660', '2018-01-30 16:24:29');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `locations`
+--
+ALTER TABLE `locations`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `locations`
+--
+ALTER TABLE `locations`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
